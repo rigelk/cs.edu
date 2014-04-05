@@ -154,6 +154,12 @@ a.button small {
   display: block;
   font-size: 11px;
 }
+
+a.button-red small {
+  display: block;
+  font-size: 11px;
+}
+
 header a.button {
   position: absolute;
   right: 0;
