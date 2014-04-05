@@ -1,0 +1,20 @@
+#!/bin/sh
+
+lb config noauto \
+ --architectures "i386" \
+ --bootappend-live "boot=live config hostname=cs.edu username=hal \
+ locales=fr_FR.UTF-8 keyboard-layouts=fr" \
+ --bootappend-install "locales=fr_FR.UTF-8" \
+ --binary-images "hdd" \
+ --distribution "wheezy" \
+ --iso-publisher "http://webconverger.com" \
+ --iso-volume "cs.edu" \
+ --iso-application "cs.edu" \
+ --archive-areas "main contrib non-free" \
+ --apt-indices "false" \
+ --apt-recommends "false" \
+ --memtest "none" \
+ --win32-loader "false" \
+ --source "false" \
+ --debug \
+    "${@}"
